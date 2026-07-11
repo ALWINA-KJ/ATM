@@ -1,0 +1,66 @@
+# Simple ATM Withdrawal Program
+
+## Description
+This is a basic Python program that simulates an ATM withdrawal process. The user enters the amount they want to withdraw, and the program checks whether the account has sufficient balance.
+
+## Features
+- Displays an initial account balance.
+- Accepts withdrawal amount from the user.
+- Checks if the withdrawal amount is available.
+- Updates the balance after a successful withdrawal.
+- Displays an "Insufficient Balance" message if the withdrawal amount exceeds the available balance.
+
+## Program Code
+
+```python
+balance = 5000
+
+amount = float(input("Enter amount to withdraw: "))
+
+if amount <= balance:
+    balance -= amount
+    print("Withdrawal Successful")
+    print("Remaining Balance:", balance)
+else:
+    print("Insufficient Balance")
+```
+
+## Sample Output
+
+### Example 1: Successful Withdrawal
+
+```
+Enter amount to withdraw: 1500
+Withdrawal Successful
+Remaining Balance: 3500.0
+```
+
+### Example 2: Insufficient Balance
+
+```
+Enter amount to withdraw: 7000
+Insufficient Balance
+```
+
+## Concepts Used
+- Variables
+- User Input
+- Conditional Statements (`if-else`)
+- Arithmetic Operators
+- Output Statements
+
+## Requirements
+- Python 3.x
+
+## How to Run
+1. Save the program as `atm.py`.
+2. Open a terminal or command prompt.
+3. Navigate to the folder containing the file.
+4. Run the command:
+
+```bash
+python atm.py
+```
+
+## Author
+Your Name
